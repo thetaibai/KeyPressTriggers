@@ -11,9 +11,12 @@ RM := rm -rf
 -include sources.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
--include Core/Src/subdir.mk
--include Core/LittleOs/Core/subdir.mk
--include Core/LittleOs/Config/subdir.mk
+-include Core/BSW/Src/subdir.mk
+-include Core/BSW/LittleOs/Core/subdir.mk
+-include Core/BSW/LittleOs/Config/subdir.mk
+-include Core/BSW/InM/Core/subdir.mk
+-include Core/BSW/DigitalTube/Core/subdir.mk
+-include Core/APP/ModeChange/Core/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -54,6 +57,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 KeyPressTriggers.list \
 
+OBJCOPY_HEX += \
+KeyPressTriggers.hex \
+
 
 # All Target
 all: main-build
@@ -77,12 +83,17 @@ KeyPressTriggers.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS
 	@echo 'Finished building: $@'
 	@echo ' '
 
+KeyPressTriggers.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "KeyPressTriggers.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) KeyPressTriggers.elf KeyPressTriggers.list KeyPressTriggers.map default.size.stdout
+	-$(RM) KeyPressTriggers.elf KeyPressTriggers.hex KeyPressTriggers.list KeyPressTriggers.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

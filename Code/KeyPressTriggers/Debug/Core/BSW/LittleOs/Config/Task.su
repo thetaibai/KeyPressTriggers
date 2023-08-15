@@ -1,0 +1,6 @@
+../Core/BSW/LittleOs/Config/Task.c:40:6:OS_1ms	4	static
+../Core/BSW/LittleOs/Config/Task.c:53:6:OS_2ms	8	static
+../Core/BSW/LittleOs/Config/Task.c:66:6:OS_4ms1	8	static
+../Core/BSW/LittleOs/Config/Task.c:79:6:OS_8ms3	8	static
+../Core/BSW/LittleOs/Config/Task.c:93:6:OS_8ms7	8	static
+../Core/BSW/LittleOs/Config/Task.c:106:6:OS_Idle	4	static

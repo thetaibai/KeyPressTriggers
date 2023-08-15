@@ -1,0 +1,5 @@
+DigitalTube.c:12:6:DT_Polling	6
+DigitalTube.c:31:13:DT_Display_DIG1	1
+DigitalTube.c:39:13:DT_Display_DIG2	1
+DigitalTube.c:47:13:DT_Display_DIG3	1
+DigitalTube.c:55:13:DT_Display	9

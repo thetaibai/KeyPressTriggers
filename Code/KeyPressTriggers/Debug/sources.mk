@@ -10,6 +10,7 @@ C_SRCS :=
 S_UPPER_SRCS := 
 O_SRCS := 
 CYCLO_FILES := 
+OBJCOPY_HEX := 
 SIZE_OUTPUT := 
 OBJDUMP_LIST := 
 SU_FILES := 
@@ -22,9 +23,12 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-Core/LittleOs/Config \
-Core/LittleOs/Core \
-Core/Src \
+Core/APP/ModeChange/Core \
+Core/BSW/DigitalTube/Core \
+Core/BSW/InM/Core \
+Core/BSW/LittleOs/Config \
+Core/BSW/LittleOs/Core \
+Core/BSW/Src \
 Core/Startup \
 Drivers/STM32F1xx_HAL_Driver/Src \
 

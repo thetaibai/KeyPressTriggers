@@ -1,0 +1,5 @@
+../Core/BSW/DigitalTube/Core/DigitalTube.c:12:6:DT_Polling	8	static
+../Core/BSW/DigitalTube/Core/DigitalTube.c:31:13:DT_Display_DIG1	8	static
+../Core/BSW/DigitalTube/Core/DigitalTube.c:39:13:DT_Display_DIG2	8	static
+../Core/BSW/DigitalTube/Core/DigitalTube.c:47:13:DT_Display_DIG3	8	static
+../Core/BSW/DigitalTube/Core/DigitalTube.c:55:13:DT_Display	16	static
