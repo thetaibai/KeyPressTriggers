@@ -19,6 +19,8 @@
 #include "InM.h"
 #include "DigitalTube.h"
 #include "ModeChange.h"
+#include "Display.h"
+#include "Trigger.h"
 
 enum TaskIdT
 {

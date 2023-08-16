@@ -23,7 +23,9 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Core/APP/Display/Core \
 Core/APP/ModeChange/Core \
+Core/APP/Trigger/Core \
 Core/BSW/DigitalTube/Core \
 Core/BSW/InM/Core \
 Core/BSW/LittleOs/Config \

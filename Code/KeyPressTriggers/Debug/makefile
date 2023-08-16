@@ -16,7 +16,9 @@ RM := rm -rf
 -include Core/BSW/LittleOs/Config/subdir.mk
 -include Core/BSW/InM/Core/subdir.mk
 -include Core/BSW/DigitalTube/Core/subdir.mk
+-include Core/APP/Trigger/Core/subdir.mk
 -include Core/APP/ModeChange/Core/subdir.mk
+-include Core/APP/Display/Core/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

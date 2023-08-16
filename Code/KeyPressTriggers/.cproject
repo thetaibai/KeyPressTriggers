@@ -55,6 +55,10 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/KeyPressTriggers/Core/BSW/DigitalTube/Core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/KeyPressTriggers/Core/APP/ModeChange/Config}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/KeyPressTriggers/Core/APP/ModeChange/Core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/KeyPressTriggers/Core/APP/Display/Config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/KeyPressTriggers/Core/APP/Display/Core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/KeyPressTriggers/Core/APP/Trigger/Config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/KeyPressTriggers/Core/APP/Trigger/Core}&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.597539181" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>

@@ -1,4 +1,6 @@
+"./Core/APP/Display/Core/Display.o"
 "./Core/APP/ModeChange/Core/ModeChange.o"
+"./Core/APP/Trigger/Core/Trigger.o"
 "./Core/BSW/DigitalTube/Core/DigitalTube.o"
 "./Core/BSW/InM/Core/InM.o"
 "./Core/BSW/LittleOs/Config/Task.o"

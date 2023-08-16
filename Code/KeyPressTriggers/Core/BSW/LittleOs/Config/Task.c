@@ -39,7 +39,7 @@ struct TaskTableT TaskTable[TaskIdNumber] =
  **/
 void OS_1ms(void)
 {
-
+	TG_Polling();
 }
 
 /*!
@@ -80,6 +80,7 @@ void OS_8ms3(void)
 {
 	InM_ButtonDetect();
 	MC_Polling();
+	DP_Polling();
 }
 
 /*!

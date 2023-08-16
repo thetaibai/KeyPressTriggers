@@ -37,5 +37,9 @@ void MC_Polling(void)
 			PreSate = 1;
 			TgMode = MODE_MS;
 		}
+		else
+		{
+			PreSate = 0;
+		}
 	}
 }
