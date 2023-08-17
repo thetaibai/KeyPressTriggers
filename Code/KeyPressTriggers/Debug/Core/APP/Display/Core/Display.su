@@ -1,4 +1,4 @@
-../Core/APP/Display/Core/Display.c:20:6:DP_Polling	8	static
-../Core/APP/Display/Core/Display.c:28:13:DP_IndexLogic	4	static
-../Core/APP/Display/Core/Display.c:68:13:DP_ModeLogic	4	static
-../Core/APP/Display/Core/Display.c:91:13:DP_Output	4	static
+../Core/APP/Display/Core/Display.c:46:6:DP_Polling	8	static
+../Core/APP/Display/Core/Display.c:64:13:DP_IndexLogic	4	static
+../Core/APP/Display/Core/Display.c:149:13:DP_ModeLogic	4	static
+../Core/APP/Display/Core/Display.c:182:13:DP_Output	4	static

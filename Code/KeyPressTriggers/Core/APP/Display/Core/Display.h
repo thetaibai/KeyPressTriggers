@@ -1,3 +1,16 @@
+/*!
+ **********************************************************
+ *@file Display.h
+ *@brief Display head file
+ **********************************************************
+ *@author LHL
+ *@version 1.0.0
+ *@data 2023.8.15
+ *
+ *
+ **********************************************************
+ **/
+
 #ifndef DISPLAY_H
 #define DISPLAY_H
 
@@ -32,9 +45,10 @@ typedef enum
 	DP_NUMBER
 }DP_Index_T;
 
+/* Provide interface */
 extern DP_Index_T DP_Index_1;
 extern DP_Index_T DP_Index_2;
 extern DP_Index_T DP_Index_3;
 extern void DP_Polling(void);
 
-#endif /* DISPLAY */
+#endif /* DISPLAY_H */

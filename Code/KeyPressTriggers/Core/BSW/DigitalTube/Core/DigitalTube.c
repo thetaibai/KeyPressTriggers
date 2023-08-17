@@ -1,14 +1,40 @@
+/*!
+ **********************************************************
+ *@file DigitalTube.c
+ *@brief DigitalTube logic code file
+ **********************************************************
+ *@author LHL
+ *@version 1.0.0
+ *@data 2023.8.15
+ *
+ *
+ **********************************************************
+ **/
+
 #include "DigitalTube.h"
 
+/* Display DigitalTube value */
 unsigned char DisplayDig1 = 0x0u;
 unsigned char DisplayDig2 = 0x0u;
 unsigned char DisplayDig3 = 0x0u;
 
+/* Declare functions */
 static void DT_Display_DIG1(void);
 static void DT_Display_DIG2(void);
 static void DT_Display_DIG3(void);
 static void DT_Display(unsigned char DisplayDig);
 
+/*!
+ **********************************************************
+ *@brief DigitalTube show function
+ *
+ *The function need be ported to timer for 2ms .
+ *
+ *@Input:none
+ *@Output:none
+ *
+ **********************************************************
+ **/
 void DT_Polling(void)
 {
 	static unsigned char cnt = 0;
@@ -28,6 +54,17 @@ void DT_Polling(void)
 	cnt++;
 }
 
+/*!
+ **********************************************************
+ *@brief DigitalTube show DIG1 function
+ *
+ *The function need be ported to timer for 2ms .
+ *
+ *@Input:none
+ *@Output:none
+ *
+ **********************************************************
+ **/
 static void DT_Display_DIG1(void)
 {
 	DT_Enable_DIG1();
@@ -36,6 +73,17 @@ static void DT_Display_DIG1(void)
 	DT_Display(DisplayDig1);
 }
 
+/*!
+ **********************************************************
+ *@brief DigitalTube show DIG2 function
+ *
+ *The function need be ported to timer for 2ms .
+ *
+ *@Input:none
+ *@Output:none
+ *
+ **********************************************************
+ **/
 static void DT_Display_DIG2(void)
 {
 	DT_Disable_DIG1();
@@ -44,6 +92,17 @@ static void DT_Display_DIG2(void)
 	DT_Display(DisplayDig2);
 }
 
+/*!
+ **********************************************************
+ *@brief DigitalTube show DIG3 function
+ *
+ *The function need be ported to timer for 2ms .
+ *
+ *@Input:none
+ *@Output:none
+ *
+ **********************************************************
+ **/
 static void DT_Display_DIG3(void)
 {
 	DT_Disable_DIG1();
@@ -52,6 +111,17 @@ static void DT_Display_DIG3(void)
 	DT_Display(DisplayDig3);
 }
 
+/*!
+ **********************************************************
+ *@brief analysis DislayDig value
+ *
+ *The function need be ported to timer for 2ms .
+ *
+ *@Input: DisplayDig
+ *@Output:none
+ *
+ **********************************************************
+ **/
 static void DT_Display(unsigned char DisplayDig)
 {
 	if((DisplayDig >> 0u) & 0x01u)

@@ -1,8 +1,22 @@
+/*!
+ **********************************************************
+ *@file DigitalTube_CfgIf.h
+ *@brief DigitalTube Required interface file
+ **********************************************************
+ *@author LHL
+ *@version 1.0.0
+ *@data 2023.8.15
+ *
+ *
+ **********************************************************
+ **/
+
 #ifndef DIGITALTUBE_CFGIF_H
 #define DIGITALTUBE_CFGIF_H
 
 #include "gpio.h"
 
+/* Required Interface */
 #define DT_Enable_DIG1()     HAL_GPIO_WritePin(DIG1_GPIO_Port, DIG1_Pin, GPIO_PIN_SET)
 #define DT_Disable_DIG1()    HAL_GPIO_WritePin(DIG1_GPIO_Port, DIG1_Pin, GPIO_PIN_RESET)
 #define DT_Enable_DIG2()     HAL_GPIO_WritePin(DIG2_GPIO_Port, DIG2_Pin, GPIO_PIN_SET)

@@ -1,3 +1,16 @@
+/*!
+ **********************************************************
+ *@file Display_CfgIf.h
+ *@brief Display Required interface file
+ **********************************************************
+ *@author LHL
+ *@version 1.0.0
+ *@data 2023.8.15
+ *
+ *
+ **********************************************************
+ **/
+
 #ifndef DISPLAY_CFGIF_H
 #define DISPLAY_CFGIF_H
 
@@ -5,7 +18,7 @@
 #include "ModeChange.h"    /* For Mode Interface */
 #include "DigitalTube.h"   /* For DisplayDig Interface */
 
-/* External interface */
+/* Required interface */
 #define DP_Get_TimeUpBt()      KeyPress[TIMEUP].PressState
 #define DP_Get_TimeDownBt()    KeyPress[TIMEDOWN].PressState
 #define DP_Get_Mode()          TgMode

@@ -1,9 +1,35 @@
+/*!
+ **********************************************************
+ *@file Trigger.c
+ *@brief Trigger logic code file
+ **********************************************************
+ *@author LHL
+ *@version 1.0.0
+ *@data 2023.8.15
+ *
+ *
+ **********************************************************
+ **/
+
 #include"Trigger.h"
 
+/* Trigger time */
 unsigned long TG_Time = 0;
 
+/* Declare functions */
 static unsigned long TG_Calculate_Time(eMode Mode);
 
+/*!
+ **********************************************************
+ *@brief Trigger control main function
+ *
+ *The function need be ported to timer for 1ms .
+ *
+ *@Input:none
+ *@Output:none
+ *
+ **********************************************************
+ **/
 void TG_Polling(void)
 {
 	static unsigned char PreSate = 0;
@@ -41,7 +67,17 @@ void TG_Polling(void)
 	}
 }
 
-/* Calculate Trigger time */
+/*!
+ **********************************************************
+ *@brief Calculate Trigger time function
+ *
+ *The function need be ported to timer for 1ms .
+ *
+ *@Input:none
+ *@Output:none
+ *
+ **********************************************************
+ **/
 static unsigned long TG_Calculate_Time(eMode Mode)
 {
 	 unsigned char SiglePlaces = 0;

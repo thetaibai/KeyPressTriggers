@@ -1,4 +1,4 @@
-Display.c:20:6:DP_Polling	1
-Display.c:28:13:DP_IndexLogic	6
-Display.c:68:13:DP_ModeLogic	3
-Display.c:91:13:DP_Output	1
+Display.c:46:6:DP_Polling	1
+Display.c:64:13:DP_IndexLogic	11
+Display.c:149:13:DP_ModeLogic	3
+Display.c:182:13:DP_Output	1

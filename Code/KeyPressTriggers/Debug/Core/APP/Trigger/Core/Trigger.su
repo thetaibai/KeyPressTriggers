@@ -1,2 +1,2 @@
-../Core/APP/Trigger/Core/Trigger.c:7:6:TG_Polling	8	static
-../Core/APP/Trigger/Core/Trigger.c:45:22:TG_Calculate_Time	24	static
+../Core/APP/Trigger/Core/Trigger.c:33:6:TG_Polling	8	static
+../Core/APP/Trigger/Core/Trigger.c:81:22:TG_Calculate_Time	24	static

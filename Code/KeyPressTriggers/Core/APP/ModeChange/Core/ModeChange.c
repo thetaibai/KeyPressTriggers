@@ -1,7 +1,32 @@
+/*!
+ **********************************************************
+ *@file ModeChange.c
+ *@brief ModeChange logic code file
+ **********************************************************
+ *@author LHL
+ *@version 1.0.0
+ *@data 2023.8.15
+ *
+ *
+ **********************************************************
+ **/
+
 #include "ModeChange.h"
 
+/* Mode value */
 eMode TgMode = MODE_MS;
 
+/*!
+ **********************************************************
+ *@brief ModeChange control main function
+ *
+ *The function need be ported to timer for 8ms3 .
+ *
+ *@Input:none
+ *@Output:none
+ *
+ **********************************************************
+ **/
 void MC_Polling(void)
 {
 	static unsigned char PreSate = 0;

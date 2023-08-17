@@ -1,5 +1,19 @@
+/*!
+ **********************************************************
+ *@file InM.c
+ *@brief InM Mode logic code file
+ **********************************************************
+ *@author LHL
+ *@version 1.0.0
+ *@data 2023.8.15
+ *
+ *
+ **********************************************************
+ **/
+
 #include "InM.h"
 
+/* Button State value */
 TKeyPress KeyPress[BUTTON_NUMBER] =
 {
 	{NOPRESS, NOPRESS, InitNumber},
@@ -8,6 +22,17 @@ TKeyPress KeyPress[BUTTON_NUMBER] =
 	{NOPRESS, NOPRESS, InitNumber}
 };
 
+/*!
+ **********************************************************
+ *@brief InM get button state function
+ *
+ *The function need be ported to timer for 4ms1 .
+ *
+ *@Input:none
+ *@Output:none
+ *
+ **********************************************************
+ **/
 void InM_Gather(void)
 {
 	KeyPress[MODE].RealState = InM_ReadMode();
@@ -16,6 +41,17 @@ void InM_Gather(void)
 	KeyPress[TRIGGER].RealState = InM_ReadTrigger();
 }
 
+/*!
+ **********************************************************
+ *@brief InM filtering function
+ *
+ *The function need be ported to timer for 8ms3 .
+ *
+ *@Input:none
+ *@Output:none
+ *
+ **********************************************************
+ **/
 void InM_ButtonDetect(void)
 {
 	Button i = MODE;

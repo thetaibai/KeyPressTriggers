@@ -1,3 +1,16 @@
+/*!
+ **********************************************************
+ *@file Trigger_CfgIf.h
+ *@brief Trigger head file
+ **********************************************************
+ *@author LHL
+ *@version 1.0.0
+ *@data 2023.8.15
+ *
+ *
+ **********************************************************
+ **/
+
 #ifndef TRIGGER_CFGIF_H
 #define TRIGGER_CFGIF_H
 
@@ -6,7 +19,7 @@
 #include "Display.h"    /* For time interface */
 #include "gpio.h"		/* For Trigger interface */
 
-/* External interface */
+/* Required interface */
 #define TG_Get_TriggerBt()        KeyPress[TRIGGER].PressState
 #define TG_Get_Mode()             TgMode
 #define TG_Get_SiglePlaces()      DP_Index_1

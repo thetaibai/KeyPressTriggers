@@ -1,2 +1,2 @@
-Trigger.c:7:6:TG_Polling	7
-Trigger.c:45:22:TG_Calculate_Time	3
+Trigger.c:33:6:TG_Polling	7
+Trigger.c:81:22:TG_Calculate_Time	3

@@ -1,2 +1,2 @@
-../Core/BSW/InM/Core/InM.c:11:6:InM_Gather	8	static
-../Core/BSW/InM/Core/InM.c:19:6:InM_ButtonDetect	16	static
+../Core/BSW/InM/Core/InM.c:36:6:InM_Gather	8	static
+../Core/BSW/InM/Core/InM.c:55:6:InM_ButtonDetect	16	static
